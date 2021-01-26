@@ -20,13 +20,20 @@ h3 {
 
 #city {
     background-image: url("img/city.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height : 25rem;
     width: 100%;
     text-align: center;
     font-size: xx-large;
+    font-family: Arial, fantasy;
     padding-top: 5rem;
     text-decoration-line: underline;
+}
 
+#map,#map2,#map3 {
+    width: 100%;
+    height: 18rem;
 }
 
 #bubulle,#fort,#parc {
@@ -57,10 +64,13 @@ h3 {
 #imageFort {
     background-image: url("img/fort.jpg");
     float: right;
-
 }
 
-#imgParc{
+#imgParc {
     background-image: url("img/imgParc.jpg");
     float: left;
+}
+
+#map,#map2,#map3 {
+    box-shadow: 0.4rem 0.4rem black;
 }

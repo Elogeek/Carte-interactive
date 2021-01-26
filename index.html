@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Ma carte interactive</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container">
@@ -12,7 +14,7 @@
 
         <div id="imageBulle"></div>
             <div id="bubulle">
-                <iframe src="https://www.google.com/maps/dir//grenoble+teleph%C3%A9rique/@45.1905961,5.7245531,14z/data=!4m9!4m8!1m1!4e2!1m5!1m1!1s0x478af489ce7ea2c7:0xbbfdf750c4b73f6e!2m2!1d5.7261!2d45.1929765"></iframe>
+                <div id="map"></div>
                 <h3> Le téléphérique</h3>
                 <p>
                     La métropolo Grenobloise ses situe dans le département de L'Isère, au sud-est de France.
@@ -23,29 +25,32 @@
 
         <div id="imageFort"></div>
             <div id="fort">
-                <iframe src="https://www.google.com/maps/dir//grenoble+t%C3%A9l%C3%A9ph%C3%A9rique+urbain/@45.1929551,5.6560602,12z/data=!3m1!4b1!4m9!4m8!1m1!4e2!1m5!1m1!1s0x478af489ce7ea2c7:0xbbfdf750c4b73f6e!2m2!1d5.7261!2d45.1929765" usemap="#image-map"></iframe>
+                <div id="map2"></div>
                 <h3>Le Fort de la Bastille</h3>
                 <p>
                     C'est un fort militaire surplombant de 264 mètres la ville de Grenoble.
                     Édifié durant la première partie du XIXᵉ siècle et culminant à 476 mètres d'altitude sur le massif de la Chartreuse.
                     Accessible en téléphérique, à pied pour les plus courageux ou en voiture, la Bastille, est le premier site touristique de l'agglomération grenobloise avec 600 000 visiteurs par an.
                     D'ailleurs, sur le toit de la gare supérieure du téléphérique, une webcam offrant toutes les vingt minutes aux internautes une photographie panoramique de 220° de la ville.
-                    Pour les plus petits, le Fort contient le Jardin des Dauphins, ceux-ci sont en terrasses et intégré aux parois du fort. Plaisir garanti!
+                    Pour les plus petits, le Fort contient le Jardin des Dauphins (avec des plaines de jeux), ceux-ci sont en terrasses et intégré aux parois du fort. Plaisir garanti !
                 </p>
             </div>
 
 
         <div id="imgParc"></div>
             <div id="parc">
-                <iframe src="https://www.google.com/maps/dir//parc+paul+mistral+grenoble/@45.1853531,5.6665872,12z/data=!3m1!4b1!4m9!4m8!1m1!4e2!1m5!1m1!1s0x478af4f18f9b536d:0x27fb9854ae7d0cf2!2m2!1d5.736627!2d45.1853745"></iframe>
+                <div id="map3"></div>
                 <h3>Le parc Mistral</h3>
                 <p>
                     Le poumon vert de la ville. Ce parc urbain contient 21 hectares de verdure, plusieurs équipements sportifs,l'hôtel de ville...
-                    Et aussi la tour Perret! Elle offre un panorama unique sur les Alpes !!!
+                    Et aussi la tour Perret ! Elle offre un panorama unique sur les Alpes !!!
                 </p>
             </div>
     </div>
 
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
     <script src="script.js"></script>
 </body>
 </html>
