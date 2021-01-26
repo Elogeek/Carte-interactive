@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 2rem;
+}
+
+h3 {
+    text-align: center;
+    line-height: 9rem;
+}
+
+#city {
+    background-image: url("img/city.jpg");
+    height : 25rem;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 5rem;
+    text-decoration-line: underline;
+
+}
+
+#bubulle,#fort,#parc {
+    width: 50%;
+    overflow: hidden;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+#imageFort,#imgParc {
+    width: 50%;
+    height: 50rem;
+    background-repeat: no-repeat;
+    margin-top : 5rem;
+}
+
+#imageBulle {
+    background-image: url("img/bulle.jpg");
+    height: 38rem;
+    width: 50%;
+    float: left;
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+}
+
+#imageFort {
+    background-image: url("img/fort.jpg");
+    float: right;
+
+}
+
+#imgParc{
+    background-image: url("img/imgParc.jpg");
+    float: left;
+}
