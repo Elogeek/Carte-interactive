@@ -34,6 +34,7 @@ h3 {
 #map,#map2,#map3 {
     width: 100%;
     height: 18rem;
+    box-shadow: 0.4rem 0.4rem black;
 }
 
 #bubulle,#fort,#parc {
@@ -71,6 +72,3 @@ h3 {
     float: left;
 }
 
-#map,#map2,#map3 {
-    box-shadow: 0.4rem 0.4rem black;
-}
